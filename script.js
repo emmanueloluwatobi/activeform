@@ -27,6 +27,8 @@ var formData = {
             .finally(function() {
                 // Re-enable the button after the email is sent or an error occurs
                 document.getElementById('sendMailBtn').disabled = false;
+                // Reset the form to clear input fields
+                document.getElementById('contact-form').reset();
             });
     });
 });
